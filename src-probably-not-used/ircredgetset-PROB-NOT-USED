@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# Base64 encoded file variable
+base64_file="ewogICJ...xIgp9"
+
+# Load the base64 content if the script itself contains the variable
+if grep -q "^base64_file=" "$0"; then
+
+	base64_file=$(grep "^base64_file=" "$0" | sed 's/^base64_file="\([^"]*\)"$/\1/')
+# Not strip surrounding quotes version
+#    base64_file=$(grep "^base64_file=" "$0" | sed 's/^base64_file=//')
+fi
+
+# Function to set the base64 content
+set_base64() {
+	base64_file=$(cat | tr -d '\n' <&0)
+	save_script
+}
+
+# Function to get the base64 content
+get_base64() {
+	printf "%s" "$base64_file"
+}
+
+# Function to save the script with the updated base64 variable
+save_script() {
+	if sed -i "/^base64_file=/c\base64_file=\"$base64_file\"" "$0"; then
+		echo "irconfgetset: Script saved with updated base64 content"
+	else
+		echo "irconfgetset: Error: Could not save the script" >&2
+		exit 1
+	fi
+	echo "Script saved with updated base64 content"
+}
+
+# Parse command line arguments
+case "$1" in
+--set)
+	set_base64
+	;;
+--get)
+	get_base64
+	;;
+*)
+	echo "Usage: $0 {--set|--get}"
+	;;
+esac

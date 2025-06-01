@@ -1,0 +1,194 @@
+#!/bin/bash
+
+# Main script of ireset system, should be placed in the local conf dir.
+
+#-------------------------------------------------------------------------#
+#                                   data                                  #
+#-------------------------------------------------------------------------#
+
+declare TARGET_DIR
+declare exit_status=0
+declare LAST_COMMAND="Entered this menu"
+declare has_jq=0
+#-------------------------------------------------------------------------#
+#                                 functions                               #
+#-------------------------------------------------------------------------#
+
+init_option_vars_and_data() {
+	# Check if an argument is provided
+	if [ -z "$1" ]; then
+		echo "No argument provided. Exiting."
+		exit 1
+	fi
+
+	# Check if the first argument is a directory
+	# check if it is not a directory
+	if [ ! -e "$1" ]; then
+		echo "$1 does not exist. Exiting."
+		exit 1
+	fi
+
+	TARGET_DIR="$1"
+
+	# determine jq mode
+	if command -v jq &>/dev/null; then
+		has_jq=1
+	else
+		echo "'jq' not found, using simple fallback"
+		has_jq=0
+	fi
+
+}
+
+get_and_export_cred_variables() {
+	creds_file="$1"        #path to creds file
+	creds_wanted_file="$2" #newline separated list of keys to get from creds file
+
+	keys=$(cat "$creds_wanted_file" | tr '\n' ' ')
+
+	read -rsp "Enter password to open cred-vault: " PASSWORD
+	echo
+	tui-spin &
+	SPIN_PID=$!
+
+	values=$(printf "%s" "$PASSWORD" | cred -e "$keys" "$creds_file")
+	kill $SPIN_PID
+	if [ $? -ne 0 ]; then
+		echo "Error: Failed to decrypt."
+		kill $SPIN_PID
+		exit 1
+	fi
+	i=0
+	while IFS= read -r key; do
+		env_var="CRED_${key//./_}"
+		value=$(echo "$values" | sed -n "$((i + 1))p")
+		# Use base64 to avoid all escaping issues, like escaped string getting unescaped unintentionally when passed, and avoid headaches
+		value=$(echo "$value" | base64 -w 0)
+		export "$env_var"="$value"
+		i=$((i + 1))
+	done <"$creds_wanted_file"
+
+	# List all dynamically exported environment variables
+	#printf "\nExported environment variables\n"
+	#export -p | grep 'declare -x CRED_'
+	#exit
+}
+
+#--# check_if_necessary_commands_exists_and_install_if_not() {
+#--# 	# This wont yet install if not exist
+#--# 	# But we arent going to use this.
+#--# 	echo "check $1"
+#--# 	# Check if a file name is provided
+#--# 	if [ ! -f "$1" ]; then
+#--# 		exit 1
+#--# 	fi
+#--#
+#--# 	file="$1"
+#--#
+#--# 	# Check if the file exists
+#--# 	if [ ! -f "$file" ]; then
+#--# 		echo "File not found: $file"
+#--# 		exit 1
+#--# 	fi
+#--#
+#--# 	# Process each line in the file
+#--# 	while IFS= read -r line; do
+#--# 		# Remove comments and trim whitespace
+#--# 		command=$(echo "$line" | sed 's/#.*//' | xargs)
+#--#
+#--# 		# Skip empty lines
+#--# 		if [ -z "$command" ]; then
+#--# 			continue
+#--# 		fi
+#--#
+#--# 		# Check if the command exists in the system
+#--# 		if command -v "$command" >/dev/null; then
+#--# 			echo "'$command' exists."
+#--# 		else
+#--# 			echo "FAILURE: '$command' does not exist."
+#--# 			exit 1
+#--# 		fi
+#--# 	done <"$file"
+#--# }
+
+# We include this function because we can not rely on scripts being in the $BASE_DIR/command-library at the most inital stage of ireset. (NOTE: Similar command is likely later included as a script in the command-library)
+pacage_list_distil_standin_function() {
+	local input_file="$1"
+
+	# Check if the file argument is provided
+	if [ -z "$input_file" ]; then
+		echo "Usage: $0 <file>"
+		return 1
+	fi
+
+	# Process the file and output the package list
+	grep -v '^#' "$input_file" | # Remove lines starting with #
+		sed 's/\.\..*$//' |         # Remove everything after ..
+		tr -s ' ' '\n' |            # Replace spaces with newlines
+		sed '/^\s*$/d'              # Remove empty lines
+}
+# Function to check if necessary commands exist in the command library
+check_if_necessary_commands_exists() {
+	local base_dir="$1"
+	local required_commands_file="$base_dir/required-commands"
+	local command_library_dir="$base_dir/command-library"
+	local red='\033[1;31m'
+	local nc='\033[0m' # No Color
+
+	if [ ! -f "$required_commands_file" ]; then
+		echo -e "${red}Required commands file not found: $required_commands_file${nc}"
+		return 1
+	fi
+
+	if [ ! -d "$command_library_dir" ]; then
+		echo -e "${red}Command library directory not found: $command_library_dir${nc}"
+		return 1
+	fi
+
+	# Process the required commands file
+	local required_commands=$(pacage_list_distil_standin_function "$required_commands_file")
+
+	local all_commands_exist=true
+
+	# Check each command in the command library
+	for cmd in $required_commands; do
+		if [ "$cmd" == "ireset" ]; then
+			if [ ! -f "$base_dir/$cmd" ]; then
+				echo -e "${red}Command not found in base directory: $cmd${nc}"
+				all_commands_exist=false
+			fi
+		else
+			if [ ! -f "$command_library_dir/$cmd" ] && ! command -v "$cmd" &>/dev/null; then
+				echo -e "${red}Command found neither in system or in command-library: $cmd${nc}"
+				all_commands_exist=false
+			fi
+		fi
+	done
+
+	if ! $all_commands_exist; then
+		echo "Some necessary commands are missing from the command library."
+	fi
+}
+
+#-------------------------------------------------------------------------#
+#                                 execution                               #
+#-------------------------------------------------------------------------#
+#print_animation
+export PATH="$PWD/command-library:$PATH"
+
+init_option_vars_and_data "$1"
+check_if_necessary_commands_exists "$TARGET_DIR"
+if [ -f "$TARGET_DIR/creds" ] && [ -f "$TARGET_DIR/creds-wanted" ]; then
+	get_and_export_cred_variables "$TARGET_DIR/creds" "$TARGET_DIR/creds-wanted"
+fi
+echo
+mkdir -p "$TARGET_DIR/current-settings"
+absolute_path=$(realpath "$TARGET_DIR")
+node_dir=$(basename "$absolute_path")
+while true; do
+	tui-sign ". $node_dir installation setup ." 2
+	echo
+	tui-print-checkboxes "$TARGET_DIR/checks" "$TARGET_DIR"
+	echo
+	tui-menu "$TARGET_DIR/options" "$TARGET_DIR"
+done

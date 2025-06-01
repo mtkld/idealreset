@@ -1,0 +1,75 @@
+#!/bin/bash
+
+# Base64 encoded file variable
+base64_file=$(ircredgetset --get)
+# Function to export the file
+export_file() {
+    local dest_dir="$1"
+    if [ -d "$dest_dir" ]; then
+        local timestamp=$(date +%y%m%d-%H%M%S)
+        local dest_file="${dest_dir}/export-${timestamp}.cred"
+        printf "%s" "$base64_file" | base64 -d >"$dest_file"
+        #        echo "File exported to $dest_file"
+    else
+        echo "$0: Destination directory not found"
+        exit 1
+    fi
+}
+
+# Function to import the file
+import_file() {
+    if [ -f "$1" ]; then
+        base64_file=$(base64 -w 0 "$1")
+        #printf "%s" "$base64_file" | ircredgetset --set
+        if ! printf "%s" "$base64_file" | irconfgetset --set; then
+            echo "$0: Error: Could not import base64 content" >&2
+            exit 1
+        fi
+    else
+        echo "$0: File not found"
+        exit 1
+    fi
+}
+
+# Function to edit the file
+
+# Function to edit the file
+edit_file() {
+    printf "%s" "$base64_file" | base64 -d >temp_file
+    cred temp_file
+    base64_file=$(base64 -w 0 temp_file)
+    #    printf "%s" "$base64_file" | ircredgetset --set
+    if ! printf "%s" "$base64_file" | ircredgetset --set; then
+        echo "$0: Error: Could not update base64 content. Check you have permissions to edit the script in its global install path" >&2
+
+        exit 1
+    fi
+    rm temp_file
+}
+# Function to edit the file
+get_values_by_keys() {
+    local keys="$1"
+    printf "%s" "$base64_file" | base64 -d >temp_file
+    cred -e "$keys" temp_file
+    rm temp_file
+}
+
+# Parse command line arguments
+case "$1" in
+--get-values-by-keys)
+    # $1 = keys to get value of in cred file
+    printf "%s" "$(get_values_by_keys "$2")"
+    ;;
+--export)
+    export_file "$2"
+    ;;
+--import)
+    import_file "$2"
+    ;;
+--edit)
+    edit_file
+    ;;
+*)
+    echo "Usage: $0 {--export destination_directory|--import filename|--edit}"
+    ;;
+esac

@@ -1,0 +1,17 @@
+#!/bin/bash
+# check if creds file already exists
+
+if [ -f ./creds ]; then
+	echo "Creds file already exists"
+	exit 1
+fi
+creds=$(ircredgetset --get | base64 -d)
+
+if [ -z "$creds" ]; then
+	echo "No credentials found"
+	exit 1
+fi
+
+printf "%s" "$creds" >./creds
+
+echo "Creds file imported successfully"

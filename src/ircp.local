@@ -1,0 +1,53 @@
+#!/bin/bash
+
+# Script to recursively copy files or directories to a specified backup location with an option for a dry run.
+
+# Usage: ./frc [-d] <file_or_directory>
+
+DRY_RUN=0
+TARGET="$1"
+
+# Function to handle help and usage
+usage() {
+	echo "Usage: $0 [-d] <file_or_directory>"
+	echo "  -d  Dry run: Display what will be done without actually performing the copy."
+	exit 1
+}
+
+# Check for flags and arguments
+if [ "$#" -eq 0 ]; then
+	usage
+elif [ "$1" == "-d" ]; then
+	DRY_RUN=1
+	TARGET="$2"
+fi
+
+# Check if the target file or directory exists
+if [ ! -e "$TARGET" ]; then
+	echo "Error: The specified file or directory does not exist."
+	exit 1
+fi
+
+# Calculate the absolute path of the target
+ABS_PATH=$(realpath "$TARGET")
+
+# Define the backup path
+BACKUP_PATH="/home/f/reset-points-dev/local/install-steps/target-system-config/$ABS_PATH"
+
+rm -rf "$BACKUP_PATH"
+
+# Function to perform the actual copy
+do_copy() {
+	if [ $DRY_RUN -eq 1 ]; then
+		echo "Dry run: would copy '$ABS_PATH' to '$BACKUP_PATH'"
+	else
+		# Ensure the directory exists
+		mkdir -p "$(dirname "$BACKUP_PATH")"
+		# Copy the file or directory
+		cp -vr "$ABS_PATH" "$BACKUP_PATH" | lolcat
+		echo "Copied '$ABS_PATH' to '$BACKUP_PATH'"
+	fi
+}
+
+# Execute the copy function
+do_copy

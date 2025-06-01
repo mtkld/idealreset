@@ -1,0 +1,63 @@
+#!/bin/bash
+
+# Define ANSI color code for bright red
+RED='\033[1;31m'
+NO_COLOR='\033[0m' # Reset to default terminal color
+
+# Required commands file and command library directory in CWD
+REQUIRED_COMMANDS_FILE="./required-commands"
+COMMAND_LIBRARY="./command-library"
+BASE_DIR="./"
+
+# Check if required-commands file exists
+if [ ! -f "$REQUIRED_COMMANDS_FILE" ]; then
+    echo -e "${RED}Required commands file not found: $REQUIRED_COMMANDS_FILE${NO_COLOR}"
+    exit 1
+fi
+
+# Remove previous one so we dont get residula files if we run cmd many times over changing commands.
+rm -rf "$COMMAND_LIBRARY"
+
+# Create the command library directory if it doesn't exist
+mkdir -p "$COMMAND_LIBRARY"
+# Create the base directory if it doesn't exist
+mkdir -p "$BASE_DIR"
+
+# Process each line in the required-commands file
+while IFS= read -r line; do
+    # Remove comments and trim whitespace
+    command=$(echo "$line" | sed 's/#.*//' | xargs)
+
+    # Skip empty lines
+    if [ -z "$command" ]; then
+        continue
+    fi
+
+    # Check if the command exists in the system
+    if command -v "$command" >/dev/null; then
+        command_path=$(command -v "$command")
+        cp "$command_path" "$COMMAND_LIBRARY/"
+        if [ $? -ne 0 ]; then
+            echo -e "${RED}Error copying '$command' to $COMMAND_LIBRARY.${NO_COLOR}"
+            exit 1
+        fi
+        echo "'$command' has been copied to $COMMAND_LIBRARY."
+    else
+        echo -e "${RED}FAILURE: '$command' does not exist in the system.${NO_COLOR}"
+        exit 1
+    fi
+done <"$REQUIRED_COMMANDS_FILE"
+
+# Move ireset to base_dir if it exists in command-library
+if [ -f "$COMMAND_LIBRARY/ireset" ]; then
+    mv "$COMMAND_LIBRARY/ireset" "$BASE_DIR/"
+    if [ $? -ne 0 ]; then
+        echo -e "${RED}Error moving 'ireset' to $BASE_DIR.${NO_COLOR}"
+        exit 1
+    fi
+    echo "'ireset' has been moved to $BASE_DIR."
+else
+    echo -e "${RED}ireset not found in the command-library.${NO_COLOR}"
+fi
+
+echo -e "All commands processed successfully."
