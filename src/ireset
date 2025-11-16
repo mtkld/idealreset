@@ -112,6 +112,7 @@ get_and_export_cred_variables() {
 #--# }
 
 # We include this function because we can not rely on scripts being in the $BASE_DIR/command-library at the most inital stage of ireset. (NOTE: Similar command is likely later included as a script in the command-library)
+# This function previously was it's own script.
 pacage_list_distil_standin_function() {
 	local input_file="$1"
 

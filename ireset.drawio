@@ -1,0 +1,306 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:129.0) Gecko/20100101 Firefox/129.0" version="24.7.7">
+  <diagram name="Page-1" id="9gd-o2ZbviLQye6woFHe">
+    <mxGraphModel dx="2804" dy="2178" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="500" pageHeight="600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8b-438j-u1a9_ujWaqER-270" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#CC0000;strokeWidth=1;fillColor=#CC0000;" parent="1" vertex="1">
+          <mxGeometry x="616.5" y="618" width="97" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-128" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#CC00CC;" parent="1" vertex="1">
+          <mxGeometry x="279" y="620" width="421" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-269" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#CC0000;strokeWidth=1;fillColor=#FFFFCC;" parent="1" vertex="1">
+          <mxGeometry x="612.5" y="620" width="99" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-124" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#00CC00;" parent="1" vertex="1">
+          <mxGeometry x="322" y="160" width="120" height="415" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-240" value="&lt;div&gt;IReset dev tools&lt;/div&gt;&lt;div&gt;ir-cloud-set&lt;/div&gt;&lt;div&gt;ir-cloud-get&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="337" y="175.5" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-238" value="&lt;div&gt;IReset install&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="297" y="642" width="104" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-217" value="Unlock" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#0000CC;fillColor=#000099;" parent="1" vertex="1">
+          <mxGeometry x="113" y="660" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-236" value="Unlock" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#0000CC;fillColor=#000099;" parent="1" vertex="1">
+          <mxGeometry x="113" y="513" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-216" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#0000CC;fillColor=#000099;" parent="1" vertex="1">
+          <mxGeometry x="88" y="717" width="110" height="103" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-206" value="&lt;div style=&quot;padding-right: 10px; padding-left: 10px;&quot;&gt;Run &#39;&lt;b&gt;ireset&lt;/b&gt;&#39; to prepare installation&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#0000CC;fillColor=default;gradientColor=#EBFFEB;gradientDirection=west;" parent="1" vertex="1">
+          <mxGeometry x="90" y="717" width="110" height="103" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-218" value="Credentials" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#0000CC;fillColor=#000099;" parent="1" vertex="1">
+          <mxGeometry x="92.38" y="640" width="101.25" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-219" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#0000CC;fillColor=#000099;" parent="1" vertex="1">
+          <mxGeometry x="78" y="567" width="132" height="103" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-220" value="&lt;div&gt;IR-folder&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;strokeColor=none;fillColor=#000099;" parent="1" vertex="1">
+          <mxGeometry x="81" y="620" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-208" value="Unlock" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#0000CC;fillColor=#FFCCFF;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="115" y="660" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-205" value="Cred-vault" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#0000CC;fillColor=#FFCCFF;gradientColor=none;gradientDirection=west;" parent="1" vertex="1">
+          <mxGeometry x="94.38" y="640" width="101.25" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-89" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#0000CC;fillColor=#FFFFFF;spacingLeft=1;gradientColor=#f0f0f0;gradientDirection=west;" parent="1" vertex="1">
+          <mxGeometry x="80" y="567" width="130" height="103" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-101" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;IR-folder&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Self-containing reset-point install system&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="88.5" y="612" width="115" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-237" value="Extract" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#0000CC;fillColor=#F0F0F0;" parent="1" vertex="1">
+          <mxGeometry x="115" y="512" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-222" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#CC0000;strokeWidth=1;fillColor=#990000;" parent="1" vertex="1">
+          <mxGeometry x="572" y="456" width="190" height="203" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-223" value="IR-folder 1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FF9999;fillColor=#990000;" parent="1" vertex="1">
+          <mxGeometry x="609" y="526" width="120" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-224" value="Volatile extension" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#CC0000;strokeWidth=1;fillColor=#990000;" parent="1" vertex="1">
+          <mxGeometry x="602" y="416" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-225" value="§" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#CC0000;strokeWidth=1;fillColor=#CC0000;" parent="1" vertex="1">
+          <mxGeometry x="572" y="209" width="190" height="237" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-226" value="Base system" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FF9999;fillColor=#990000;" parent="1" vertex="1">
+          <mxGeometry x="609" y="246" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-227" value="Extracted conf-archive" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FF9999;fillColor=#990000;" parent="1" vertex="1">
+          <mxGeometry x="609" y="286" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-228" value="&lt;div&gt;Extracted conf-archive&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FF9999;fillColor=#990000;" parent="1" vertex="1">
+          <mxGeometry x="609" y="326" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-229" value="IR-folder ..." style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FF9999;fillColor=#990000;" parent="1" vertex="1">
+          <mxGeometry x="609" y="576" width="120" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-230" value="IReset dev tools" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FF9999;fillColor=#990000;" parent="1" vertex="1">
+          <mxGeometry x="609" y="366" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-231" value="Volatile host" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#CC0000;strokeWidth=1;fillColor=#990000;" parent="1" vertex="1">
+          <mxGeometry x="602" y="170" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-232" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#990000;strokeColor=#CC0000;" parent="1" vertex="1">
+          <mxGeometry x="609" y="505" width="120" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-233" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#990000;strokeColor=#CC0000;" parent="1" vertex="1">
+          <mxGeometry x="609" y="226" width="120" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-210" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;strokeColor=none;strokeWidth=1;fillColor=#00CC00;" parent="1" vertex="1">
+          <mxGeometry x="26" y="169" width="270" height="225" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-114" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#CC0000;strokeWidth=1;gradientColor=#EBFFEB;gradientDirection=east;" parent="1" vertex="1">
+          <mxGeometry x="570" y="457" width="190" height="203" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-120" value="&lt;div&gt;Development&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#CC0000;strokeWidth=1;fillColor=#FFFFCC;" parent="1" vertex="1">
+          <mxGeometry x="600" y="417" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-88" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;strokeColor=#00CC00;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="170" width="270" height="225" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-93" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;strokeColor=#999999;strokeWidth=1;dashed=1;fillColor=#f0f0f0;" parent="1" vertex="1">
+          <mxGeometry x="100" y="297" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-94" value="IR-package 1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;strokeColor=#4D4D4D;strokeWidth=2;fillColor=#f0f0f0;" parent="1" vertex="1">
+          <mxGeometry x="100" y="257" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-84" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#CC0000;strokeWidth=1;gradientColor=#EBFFEB;gradientDirection=east;" parent="1" vertex="1">
+          <mxGeometry x="570" y="210" width="190" height="237" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-130" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#CC00CC;strokeWidth=2;" parent="1" source="8b-438j-u1a9_ujWaqER-206" target="8b-438j-u1a9_ujWaqER-128" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="417" as="sourcePoint" />
+            <mxPoint x="380" y="367" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-140" value="&lt;div&gt;&lt;b&gt;IR dev tools&lt;/b&gt;&lt;/div&gt;&lt;div&gt;ir-cloud-set&lt;/div&gt;&lt;div&gt;ir-cloud-get&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#CCCCCC;fillColor=#CCFFFF;" parent="1" vertex="1">
+          <mxGeometry x="335" y="173.5" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-141" value="" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=1;strokeColor=#0000CC;strokeWidth=1;" parent="1" source="8b-438j-u1a9_ujWaqER-140" target="8b-438j-u1a9_ujWaqER-132" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="497" as="sourcePoint" />
+            <mxPoint x="440" y="447" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="500" y="223" />
+              <mxPoint x="500" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-145" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=1;strokeColor=#00CC00;strokeWidth=2;" parent="1" source="8b-438j-u1a9_ujWaqER-160" target="8b-438j-u1a9_ujWaqER-116" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="507" as="sourcePoint" />
+            <mxPoint x="440" y="447" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="480" y="400" />
+              <mxPoint x="480" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-146" value="Volatile host" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#CC0000;strokeWidth=1;fillColor=#FFFFCC;" parent="1" vertex="1">
+          <mxGeometry x="600" y="171" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-149" value="&lt;b&gt;Secure storage&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="105" y="225" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-151" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=1;strokeColor=#00CC00;strokeWidth=2;" parent="1" source="8b-438j-u1a9_ujWaqER-167" target="8b-438j-u1a9_ujWaqER-94" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="427" as="sourcePoint" />
+            <mxPoint x="520" y="377" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280" y="540" />
+              <mxPoint x="280" y="287" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-167" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#B9E0A5;" parent="1" vertex="1">
+          <mxGeometry x="337" y="500" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-187" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8b-438j-u1a9_ujWaqER-171" target="8b-438j-u1a9_ujWaqER-162" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-171" value="IR-packages" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="339.5" y="480" width="85" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-172" value="..." style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=5;strokeColor=#666666;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="353" y="509" width="40" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-173" value="&lt;font color=&quot;#666666&quot;&gt;2&lt;/font&gt;" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=5;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="363" y="519" width="40" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-174" value="&lt;font color=&quot;#666666&quot;&gt;1&lt;/font&gt;" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=5;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="373" y="529" width="40" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-177" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Upload to save IR-folder to secure storage, or download from secure storage to make a local copy for development purpose.&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="334" y="257" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-160" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#B9E0A5;" parent="1" vertex="1">
+          <mxGeometry x="337" y="379" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-156" value="&lt;font color=&quot;#666666&quot;&gt;...&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="354" y="389" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-157" value="&lt;font color=&quot;#666666&quot;&gt;2&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="364" y="399" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-161" value="&lt;font color=&quot;#666666&quot;&gt;1&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="374" y="409" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-162" value="IR-folders" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="339.5" y="359" width="85" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-178" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;strokeColor=#00CC00;strokeWidth=2;" parent="1" source="8b-438j-u1a9_ujWaqER-171" target="8b-438j-u1a9_ujWaqER-160" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="387" y="405" as="sourcePoint" />
+            <mxPoint x="437" y="355" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-183" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Download desired IR-package. Rely on native tools of live env.&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#0000CC;" parent="1" vertex="1">
+          <mxGeometry x="85" y="403" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-116" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCCCC;strokeColor=#CC0000;" parent="1" vertex="1">
+          <mxGeometry x="605" y="506" width="120" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-192" value="&lt;div align=&quot;left&quot;&gt;&lt;b&gt;&lt;font color=&quot;#009900&quot;&gt;Ideal Reset&lt;/font&gt;&lt;/b&gt; - Modular system for building, managing and and deploying system reset points.&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Purpose: Enable building the ideal configuration and be able to restore a target device with ease at any point. Easy to continuously develop and update the configuration. Easy to manage multiple system reset points for different systems.&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;IR-folder&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;= A system reset point.&amp;nbsp; Self-contained IR-system in a folder. Contains everything to install a target system from a live environment,&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;IR-package&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= A file being the archive of an IR-folder (a tar.gz file). Folders are packaged to signify they are archives, not meant to be directly edited.&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Volatile host&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= A target system (e.g. your local personal machine) is considered volatile. It&#39;s configuration and data is not expected to last.&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Secure storage&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= Any kind of storage (e.g. USB, Cloud-drive, etc.) deemed reliable to store date securely.&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;IReset dev tools&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= The set of tools to build, manage and deploy system reset points. &lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;align=left;" parent="1" vertex="1">
+          <mxGeometry x="30" width="890" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-194" value="&lt;div&gt;&lt;b&gt;IR install&lt;/b&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#CCCCCC;fillColor=#CCFFFF;" parent="1" vertex="1">
+          <mxGeometry x="295" y="640" width="104" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-195" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Select to start auto- installation on target system by the steps defined in IR-folder.&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;align=left;" parent="1" vertex="1">
+          <mxGeometry x="296" y="689.75" width="114" height="46.5" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-202" value="&lt;div align=&quot;left&quot; style=&quot;padding-top: 0px; padding-right: 10px; padding-left: 10px;&quot;&gt;Credentials are stored in a dedicated vault file, unlocked when IR is used to reset a system, and available to the installation process.&lt;/div&gt;&lt;div align=&quot;left&quot; style=&quot;padding-top: 0px; padding-right: 10px; padding-left: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot; style=&quot;padding-top: 0px; padding-right: 10px; padding-left: 10px;&quot;&gt;The configuration may contain sensitive data and the secure storage may not be trusted. Thus one&#39;s configuration or part of it can be encrypted. It is unlocked with credentials stored in the encrypted &lt;br&gt;cred-vault file residing in the IR-folder.&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#CCCCCC;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="830" width="437.62" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-221" value="&lt;div&gt;Live env&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#0000CC;fillColor=#000099;" parent="1" vertex="1">
+          <mxGeometry x="92.38" y="492" width="101.25" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-189" value="&lt;div&gt;Live env&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#0000CC;fillColor=#FFFFCC;" parent="1" vertex="1">
+          <mxGeometry x="94.38" y="492" width="101.25" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-108" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCCCC;strokeColor=#CC0000;" parent="1" vertex="1">
+          <mxGeometry x="607" y="260" width="120" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-109" value="Base system" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#CC0000;fillColor=#FFF5F5;" parent="1" vertex="1">
+          <mxGeometry x="607" y="281" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-111" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FF6666;fillColor=#FFCCCC;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="607" y="366" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-132" value="IR dev tools" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#CC0000;fillColor=#FFF5F5;" parent="1" vertex="1">
+          <mxGeometry x="607" y="323" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-117" value="IR-folder 1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#CC0000;fillColor=#FFF5F5;" parent="1" vertex="1">
+          <mxGeometry x="605" y="527" width="120" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-249" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Unlock and unpack any encrypted content. Use&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;key from the unlocked credentials vault&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;align=left;" parent="1" vertex="1">
+          <mxGeometry x="570" y="688.63" width="120" height="48.75" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-250" value="&lt;font color=&quot;#4d4d4d&quot;&gt;Step 2 ...&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=10;spacingRight=10;strokeColor=#808080;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="432.75" y="689.75" width="108.5" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-251" value="Step 1 of install" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=10;spacingRight=10;strokeColor=#808080;" parent="1" vertex="1">
+          <mxGeometry x="432" y="640" width="110" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-255" value="&lt;font color=&quot;#99004d&quot;&gt;The credentials vault is open at this stage.&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;strokeColor=#99004D;strokeWidth=1;fillColor=#E6E6E6;spacingLeft=10;spacingRight=10;" parent="1" vertex="1">
+          <mxGeometry x="450" y="742" width="108" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-244" value="" style="html=1;shape=mxgraph.basic.isocube;isoAngle=15;strokeColor=#99004D;fillColor=#CC99FF;strokeWidth=2;gradientColor=#FF66FF;" parent="1" vertex="1">
+          <mxGeometry x="624" y="733.33" width="78" height="86.67" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-263" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CC0000;" parent="1" vertex="1">
+          <mxGeometry x="607" y="260" width="120" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-265" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#CC0000;strokeWidth=1;fillColor=#CC0000;" parent="1" vertex="1">
+          <mxGeometry x="650" y="181" width="30" height="9" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-266" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#0000CC;strokeWidth=1;fillColor=#0000CC;" parent="1" vertex="1">
+          <mxGeometry x="130.01" y="503" width="30" height="9" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-267" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#0000CC;strokeWidth=1;fillColor=#FFFFCC;" parent="1" vertex="1">
+          <mxGeometry x="128.01" y="504" width="30" height="9" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-268" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#CC0000;strokeWidth=1;fillColor=#FFFFCC;" parent="1" vertex="1">
+          <mxGeometry x="648" y="182" width="30" height="9" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-273" value="&lt;div style=&quot;padding-bottom: 0px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Update IR-folders with changes as&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;padding-bottom: 0px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;you go&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="616.25" y="569" width="101.5" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-184" value="" style="curved=1;endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#CC00CC;strokeWidth=2;entryX=0.567;entryY=0.667;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="8b-438j-u1a9_ujWaqER-183" target="8b-438j-u1a9_ujWaqER-267" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="497" as="sourcePoint" />
+            <mxPoint x="290" y="447" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-131" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#CC00CC;strokeWidth=2;entryX=0.536;entryY=0.733;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="8b-438j-u1a9_ujWaqER-268" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="618" as="sourcePoint" />
+            <mxPoint x="664" y="150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="520" y="160" />
+              <mxPoint x="664" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8b-438j-u1a9_ujWaqER-279" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#CC00CC;strokeWidth=2;" parent="1" source="8b-438j-u1a9_ujWaqER-94" target="8b-438j-u1a9_ujWaqER-183" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="500" as="sourcePoint" />
+            <mxPoint x="420" y="450" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="165" y="360" />
+              <mxPoint x="145" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
